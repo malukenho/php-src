@@ -12,7 +12,7 @@ $e = new Exception();
 var_export($e);
 ?>
 --EXPECTF--
-Exception::__set_state(array(
+Exception::__set_state([
    'message' => '',
    'string' => 'Exception in %sbug73350.php:%d
 Stack trace:
@@ -20,8 +20,8 @@ Stack trace:
    'code' => 0,
    'file' => '%sbug73350.php',
    'line' => %d,
-   'trace' => 
-  array (
-  ),
+   'trace' =>
+  [
+  ],
    'previous' => NULL,
-))
+])
